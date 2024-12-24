@@ -1,3 +1,5 @@
 *.pdf
 tests/*/diff
 tests/*/out
+
+.DS_STORE

@@ -20,10 +20,10 @@ The following tools are used for the development of this template:
 
 ### Fonts
 
-You will need the `Roboto` and `Source Sans Pro` fonts installed on your system or available somewhere. If you are using the `typst` web app, no further action is necessary. You can download them from the following links:
+You will need the `New York` and `Source Sans 3` fonts installed on your system or available somewhere. If you are using the `typst` web app, no further action is necessary. You can download them from the following links:
 
-- [Roboto](https://fonts.google.com/specimen/Roboto)
-- [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro)
+- [New York](https://developer.apple.com/fonts/)
+- [Source Sans 3](https://github.com/adobe-fonts/source-sans)
 
 This template also uses FontAwesome icons via the [fontawesome](https://typst.app/universe/package/fontawesome) package. You will need to install the fontawesome fonts on your system or configure the `typst` web app to use them. You can download fontawesome [here](https://fontawesome.com/download).
 
@@ -85,19 +85,27 @@ Documentation for this template is published with each commit. See the attached 
 
 ### Output Examples
 
-| Resumes | Cover letters |
+| Resumes | (Cover) Letters |
 | --- | --- |
 | ![Resume](assets/images/resume.png) | ![Cover Letter](assets/images/coverletter.png) |
-| ![Resume 2](assets/images/resume2.png) | ![Cover Letter 2](assets/images/coverletter2.png)|
+| ![Resume 2](assets/images/resume2.png) | ![Letter](assets/images/letter.png)|
 
 ## Building and Testing Locally
+
+***This command is for personal use to install the package locally:***
+
+```
+ln -s ~/Developer/modern-cv ~/Library/Application\ Support/typst/packages/local/modern-cv/0.7.0
+```
+
+Find how to install a typst package locally [here](https://github.com/typst/packages/?tab=readme-ov-file#local-packages).
 
 To build and test the project locally, you will need to install the `typst` CLI. You can find instructions on how to do this [here](https://github.com/typst/typst#installation).
 
 With typst installed you can make changes to `lib.typ` and then `just install` or `just install-preview` to install the package locally. Change the import statements in the template files to point to the local package (if needed):
 
 ```typst
-#import "@local/modern-cv:0.6.0": *
+#import "@local/modern-cv:0.7.0": *
 ````
 
 If you use `just install-preview` you will only need to update the version number to match `typst.toml`.
@@ -114,5 +122,5 @@ The project is licensed under the MIT license. See [LICENSE](LICENSE) for more d
 
 ## Author
 
-| [<img src="https://avatars0.githubusercontent.com/u/6591180?s=460&v=4" width="100"><br><sub>@DeveloperPaul123</sub>](https://github.com/DeveloperPaul123) |
-|:----:|
+| [<img src="https://avatars0.githubusercontent.com/u/6591180?s=460&v=4" width="100"><br><sub>@DeveloperPaul123</sub>](https://github.com/DeveloperPaul123) | [<img src="https://avatars0.githubusercontent.com/u/121049397?s=460&v=4" width="100"><br><sub>@ZzhangYH</sub>](https://github.com/ZzhangYH) |
+|:----:|:----:|
